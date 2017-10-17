@@ -18,3 +18,5 @@ This FileMaker 12 file contains
 I hope this helps to get you started with logging how your FileMaker scripts work.
 
 This is released in the aim of salus populi / the greater good, please use this for good.
+
+Inspired in part by: http://joelabrahamsson.com/elasticsearch-101/
