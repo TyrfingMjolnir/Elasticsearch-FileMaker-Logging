@@ -5,7 +5,7 @@ This FileMaker 12 file contains
 
 2 tables
 ========
-* settings, in which holds the host and port of the elasticsearch index
+* settings, in which holds the host, port, username, and password of the elasticsearch index
 * es, in which holds a minimum set of data
 
 4 Scripts
