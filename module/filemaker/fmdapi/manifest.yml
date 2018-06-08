@@ -1,0 +1,13 @@
+module_version: "1.0"
+
+var:
+  - name: paths
+    default:
+      - /opt/FileMaker/FileMaker\ Server/Logs/fmdapi.log
+    os.darwin:
+      - /Library/FileMaker Server/Logs/fmdapi.log
+    os.windows:
+      - c:/Program Files/FileMaker/FileMaker Server/Logs/fmdapi
+
+ingest_pipeline: ingest/pipeline.json
+prospector: config/filemaker16server-fmdapi.yml

@@ -1,0 +1,13 @@
+module_version: "1.0"
+
+var:
+  - name: paths
+    default:
+      - /opt/FileMaker/FileMaker\ Server/Logs/Event.log
+    os.darwin:
+      - /Library/FileMaker Server/Logs/Event.log
+    os.windows:
+      - c:/Program Files/FileMaker/FileMaker Server/Logs/Event
+
+ingest_pipeline: ingest/pipeline.json
+prospector: config/filemaker16server-event.yml

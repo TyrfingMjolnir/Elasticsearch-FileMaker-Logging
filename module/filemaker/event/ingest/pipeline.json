@@ -1,0 +1,51 @@
+{
+	"description": "Pipeline for parsing filemaker event logs",
+	"on_failure": [{
+		"set": {
+			"field": "error",
+			"value": "{{ _ingest.on_failure_message }}"
+		}
+	}],
+	"processors": [{
+			"grok": {
+				"field": "message",
+				"ignore_missing": true,
+				"pattern_definitions": {
+					"GREEDYMULTILINE": "(.|\n)*",
+					"TAB": "\t",
+					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
+				},
+				"patterns": [
+"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{GREEDYDATA} %{DATA:filemaker.event.logentry}",
+					
+"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.event.client}\\(%{DATA:filemaker.event.hostnamex}\\) \\[%{DATA:filemaker.event.ip}\\]\" %{DATA} \"%{DATA:filemaker.event.database}\" %{DATA}\"%{DATA:filemaker.event.user}\"?",
+
+"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.event.client}\\(%{DATA:filemaker.event.hostnamex}\\) \\[%{DATA:filemaker.event.ip}\\]\" %{DATA}."
+
+
+				]
+}
+		},
+		{
+			"remove": {
+				"field": "messagez"
+			}
+		},
+		{
+  			  "geoip": {
+ 			     "field": "filemaker.event.ip",
+   			   "target_field": "filemaker.event.geoip"
+    }		},
+		{
+			"date": {
+				"field": "filemaker.event.logtime",
+				"formats": [
+					"MMM  d HH:mm:ss",
+					"MMM dd HH:mm:ss"
+				],
+				"ignore_failure": true,
+				"target_field": "@timestamp"
+			}
+		}
+	]
+}

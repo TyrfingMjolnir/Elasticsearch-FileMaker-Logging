@@ -1,0 +1,9 @@
+dashboards:
+    - id: Filebeat-FileMaker-Dashboard
+      file: Filebeat-fm-overview.json
+
+    - id: ML-FileMaker-Access-Remote-IP-Count-Explorer
+      file: ml-fm-access-remote-ip-count-explorer.json
+
+    - id: ML-FileMaker-Remote-IP-URL-Explorer
+      file: ml-fm-remote-ip-url-explorer.json

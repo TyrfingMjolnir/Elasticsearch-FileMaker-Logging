@@ -1,0 +1,45 @@
+{
+	"description": "Pipeline for parsing filemaker stats logs",
+	"on_failure": [{
+		"set": {
+			"field": "error",
+			"value": "{{ _ingest.on_failure_message }}"
+		}
+	}],
+	"processors": [{
+			"grok": {
+				"field": "message",
+				"ignore_missing": true,
+				"pattern_definitions": {
+					"GREEDYMULTILINE": "(.|\n)*",
+					"TAB": "\t",
+					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
+				},
+				"patterns": [
+"%{TOMCAT_DATESTAMP:filemaker.stats.logtime}%{TAB}%{NUMBER:filemaker.stats.netwkbsecin}%{TAB}%{NUMBER:filemaker.stats.netwkbsecout}%{TAB}%{NUMBER:filemaker.stats.diskkbsecread}%{TAB}%{NUMBER:filemaker.stats.diskkbsecwrite}%{TAB}%{NUMBER:filemaker.stats.cachehits}%{TAB}%{NUMBER:filemaker.stats.cacheunsaved}%{TAB}%{NUMBER:filemaker.stats.proclients}%{TAB}%{NUMBER:filemaker.stats.opendbs}%{TAB}%{NUMBER:filemaker.stats.xdbcclients}%{TAB}%{NUMBER:filemaker.stats.webdirclients}%{TAB}%{NUMBER:filemaker.stats.cwpclients}%{TAB}%{NUMBER:filemaker.stats.remotecalls}%{TAB}%{NUMBER:filemaker.stats.remotecallsinprogress}%{TAB}%{NUMBER:filemaker.stats.elapsedtimeprcall}%{TAB}%{NUMBER:filemaker.stats.waittimeprcall}%{TAB}%{NUMBER:filemaker.stats.iotimeprcall}%{TAB}%{NUMBER:filemaker.stats.goclients}",
+					
+"%{TOMCAT_DATESTAMP:filemaker.stats.logtime}%{TAB}%{WORD:filemaker.stats.logtype}%{TAB}%{WORD:filemaker.stats.logid}%{TAB}%{HOSTNAME:filemaker.stats.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.stats.client}\\(%{DATA:filemaker.stats.hostnamex}\\) \\[%{DATA:filemaker.stats.ip}\\]\" %{DATA}."
+
+
+				]
+}
+		},
+		{
+			"remove": {
+				"field": "messagez"
+			}
+		},
+		{
+			"date": {
+				"field": "filemaker.stats.logtime",
+				"formats": [
+					"MMM  d HH:mm:ss",
+					"MMM dd HH:mm:ss"
+				],
+				"ignore_failure": true,
+				"target_field": "@timestamp"
+			}
+		}
+	]
+}
+

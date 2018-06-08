@@ -1,0 +1,91 @@
+{
+	"description": "Pipeline for parsing filemaker deployment logs",
+	"on_failure": [{
+		"set": {
+			"field": "error",
+			"value": "{{ _ingest.on_failure_message }}"
+		}
+	}],
+	"processors": [{
+			"grok": {
+				"field": "message",
+				"ignore_missing": true,
+				"pattern_definitions": {
+					"GREEDYMULTILINE": "(.|\n)*",
+					"TAB": "\t",
+					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
+				},
+				"patterns": [
+"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\" %{WORD:filemaker.deployment.type} %{DATA}\"%{DATA:filemaker.deployment.hostnamex} \\(%{DATA:filemaker.deployment.ip}\\)\" %{DATA} \"%{DATA:filemaker.deployment.app}",
+					
+"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\\(%{DATA:filemaker.deployment.hostnamex}\\) \\[%{DATA:filemaker.deployment.ip}\\]\" %{DATA} \"%{DATA:filemaker.deployment.database}\" %{DATA}\"%{DATA:filemaker.deployment.user}\"?",
+
+"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\\(%{DATA:filemaker.deployment.hostnamex}\\) \\[%{DATA:filemaker.deployment.ip}\\]\" %{DATA}."
+
+
+				]
+}
+		},
+		{
+			"remove": {
+				"field": "messagez"
+			}
+		},
+		{
+  			  "geoip": {
+ 			     "field": "filemaker.deployment.ip",
+   			   "target_field": "filemaker.deployment.geoip"
+    }		},
+		{
+			"date": {
+				"field": "filemaker.deployment.logtime",
+				"formats": [
+					"MMM  d HH:mm:ss",
+					"MMM dd HH:mm:ss"
+				],
+				"ignore_failure": true,
+				"target_field": "@timestamp"
+			}
+		}
+	]
+}
+Deployment started at 5/31/17 11:56 AM
+---------------------------------
+SETUP: PRECONFIGURE WEB SERVER
+
+Back up Apache configuration file                           succeeded
+Disable line in httpd.conf: AddDefaultCharSet               succeeded
+Graceful web server restart                                 succeeded
+
+START DEPLOYMENT
+
+Step 1: Save settings:
+Save administrative configuration settings                  succeeded
+Step 2: Configure Web Publishing Engine (WPE):
+Stop WPE                                                    succeeded
+Configuring JWPC memory                                     succeeded
+Set WPE AutoStart to enabled                                succeeded
+Add JVM Route to JWPC Server XML file                       succeeded
+Create CWPC prefs file                                      succeeded
+Update JWPC prefs file                                      succeeded
+Start WPE                                                   succeeded
+Update WPE deployment configuration                         succeeded
+Update mDNS service info                                    succeeded
+Step 3: Configure web server:
+Back up Apache configuration file                           succeeded
+Disable line in httpd.conf: AddDefaultCharSet               succeeded
+Update FileMaker API PHP setting: : $__FM_CONFIG['hostspec'] = 'http://127.0.0.1'; succeeded
+Update WPE deployment configuration                         succeeded
+Enable/disable requiring secure connections                 succeeded
+Step 4: Configure Database server (DBS):
+Set WPE Authorization Info                                  succeeded
+Set XDBC AutoStart to yes                                   succeeded
+Update XDBC deployment configuration                        succeeded
+Update WPE deployment configuration                         succeeded
+Step 5: Configure AdminServer:
+Save WPE deployment settings                                succeeded
+Save web server deployment settings                         succeeded
+Save DBS deployment settings                                succeeded
+Start WPE                                                   succeeded
+
+Deployment completed at 5/31/17 11:57 AM

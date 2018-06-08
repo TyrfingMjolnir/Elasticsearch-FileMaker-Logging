@@ -1,0 +1,159 @@
+2017-09-29 07:46:19.601 -0700	Information	638	serverhostname	Client "user" opening a connection from "user Workstation (10.0.0.12)" using "ProAdvanced 14.0.6 [fmapp]".
+2017-09-29 07:46:19.617 -0700	Information	94	serverhostname	Client "user (user Workstation) [10.0.0.12]" opening database "dbName" as "user".
+2017-09-29 08:57:28.722 -0700	Information	98	serverhostname	Client "user (user Workstation) [10.0.0.12]" closing database "dbName" as "user".
+2017-09-29 08:57:28.722 -0700	Information	22	serverhostname	Client "user (user Workstation) [10.0.0.12]" closing a connection.
+2017-09-29 09:24:23.701 -0700	Information	638	serverhostname	Client "user" opening a connection from "user Workstation (10.0.0.12)" using "ProAdvanced 14.0.6 [fmapp]".
+2017-09-29 09:24:23.717 -0700	Information	94	serverhostname	Client "user (user Workstation) [10.0.0.12]" opening database "dbName" as "user".
+2017-09-29 10:31:16.119 -0700	Information	98	serverhostname	Client "user (user Workstation) [10.0.0.12]" closing database "dbName" as "user".
+2017-09-29 10:31:16.119 -0700	Information	22	serverhostname	Client "user (user Workstation) [10.0.0.12]" closing a connection.
+2017-09-29 12:49:33.095 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (10.0.0.41)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 12:49:33.095 -0700	Information	94	serverhostname	Client "user (Workstation) [10.0.0.41]" opening database "dbName" as "user".
+2017-09-29 12:54:30.122 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-29 12:54:52.919 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-09-29 12:54:52.919 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-09-29 12:57:07.323 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-09-29 12:57:07.355 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-09-29 12:57:19.995 -0700	Information	98	serverhostname	Client "user (Workstation) [10.0.0.41]" closing database "dbName" as "user".
+2017-09-29 12:57:19.995 -0700	Information	22	serverhostname	Client "user (Workstation) [10.0.0.41]" closing a connection.
+2017-09-29 12:57:23.104 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-29 13:11:13.904 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (10.77.96.143)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 13:11:13.904 -0700	Information	94	serverhostname	Client "user (Workstation) [10.77.96.143]" opening database "dbName" as "user".
+2017-09-29 13:21:29.512 -0700	Information	98	serverhostname	Client "user (Workstation) [10.77.96.143]" closing database "dbName" as "user".
+2017-09-29 13:21:29.512 -0700	Information	22	serverhostname	Client "user (Workstation) [10.77.96.143]" closing a connection.
+2017-09-29 14:48:38.883 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 14:48:38.883 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-29 17:58:39.450 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 17:58:39.450 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-29 21:31:14.035 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 21:31:14.035 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-29 23:02:27.936 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 23:02:27.936 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-29 23:36:48.255 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-29 23:36:48.255 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-30 04:54:23.780 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 04:54:52.045 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-09-30 04:54:52.045 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-09-30 07:44:20.714 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 07:44:41.276 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "admin".
+2017-09-30 07:45:54.479 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "admin".
+2017-09-30 07:46:01.088 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 07:46:06.697 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "admin".
+2017-09-30 08:14:36.035 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "admin".
+2017-09-30 08:14:43.238 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 08:14:58.707 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-09-30 09:41:10.746 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-09-30 09:41:15.027 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-09-30 09:41:15.027 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-09-30 12:31:51.296 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 12:32:02.155 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-09-30 12:32:02.155 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-09-30 12:32:19.155 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-09-30 12:32:19.842 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-09-30 12:32:38.280 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-09-30 12:32:53.030 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-09-30 12:32:53.030 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-09-30 12:34:57.966 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-09-30 12:34:57.966 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-09-30 12:35:36.777 -0700	Information	98	serverhostname	Client "user (Laptop) [10.0.0.40]" closing database "dbName" as "admin".
+2017-09-30 12:35:36.777 -0700	Information	22	serverhostname	Client "user (Laptop) [10.0.0.40]" closing a connection.
+2017-10-01 04:29:04.726 -0700	Information	730	serverhostname	SECURITY: Client "user (user) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-01 04:29:17.616 -0700	Information	638	serverhostname	Client "user" opening a connection from "user (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 04:29:17.616 -0700	Information	94	serverhostname	Client "user (user) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-01 04:30:44.865 -0700	Information	98	serverhostname	Client "user (user) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-01 04:30:44.865 -0700	Information	22	serverhostname	Client "user (user) [129.52.1.178]" closing a connection.
+2017-10-01 04:30:57.006 -0700	Information	730	serverhostname	SECURITY: Client "user (user) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-01 04:31:08.974 -0700	Information	638	serverhostname	Client "user" opening a connection from "user (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 04:31:08.974 -0700	Information	94	serverhostname	Client "user (user) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-01 04:32:20.817 -0700	Information	98	serverhostname	Client "user (user) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-01 04:32:20.817 -0700	Information	22	serverhostname	Client "user (user) [129.52.1.178]" closing a connection.
+2017-10-01 04:49:47.133 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (10.0.0.41)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-10-01 04:49:47.149 -0700	Information	94	serverhostname	Client "user (Workstation) [10.0.0.41]" opening database "dbName" as "admin".
+2017-10-01 04:52:39.836 -0700	Information	98	serverhostname	Client "user (Workstation) [10.0.0.41]" closing database "dbName" as "admin".
+2017-10-01 04:52:39.836 -0700	Information	22	serverhostname	Client "user (Workstation) [10.0.0.41]" closing a connection.
+2017-10-01 05:11:09.369 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-01 05:11:21.963 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 05:11:21.963 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-01 05:11:35.134 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-01 05:11:35.134 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-01 05:11:52.743 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-01 05:12:04.165 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 05:12:04.165 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-01 05:12:34.446 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-01 05:12:34.446 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-01 05:12:50.930 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-01 05:12:51.617 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 05:12:51.617 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-01 05:12:57.867 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-01 05:12:57.867 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-01 05:57:40.426 -0700	Information	638	serverhostname	Client "user" opening a connection from "user (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-01 05:57:52.208 -0700	Information	22	serverhostname	Client "user (user) [129.52.1.178]" closing a connection.
+2017-10-01 09:41:33.493 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (10.77.96.143)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-10-01 09:41:33.493 -0700	Information	94	serverhostname	Client "user (Workstation) [10.77.96.143]" opening database "dbName" as "user".
+2017-10-01 09:41:43.117 -0700	Information	98	serverhostname	Client "user (Workstation) [10.77.96.143]" closing database "dbName" as "user".
+2017-10-01 09:41:43.117 -0700	Information	22	serverhostname	Client "user (Workstation) [10.77.96.143]" closing a connection.
+2017-10-01 09:41:57.805 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (10.77.96.143)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-10-01 09:41:57.805 -0700	Information	94	serverhostname	Client "user (Workstation) [10.77.96.143]" opening database "dbName" as "admin".
+2017-10-02 01:50:43.223 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 01:51:17.019 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 01:51:17.019 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:15:17.046 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:15:17.062 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:15:29.327 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:15:48.874 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:15:48.874 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:22:37.243 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:22:37.259 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:22:46.212 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:22:46.915 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:22:46.915 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:24:03.320 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:24:03.320 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:24:16.883 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:24:17.555 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:24:17.555 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:26:31.492 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:26:31.508 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:26:40.554 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:26:41.242 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:26:41.242 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:34:33.986 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:34:33.986 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:34:43.642 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:34:44.330 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:34:44.330 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 02:57:13.014 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 02:57:13.014 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 02:57:27.108 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse) [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 02:57:27.795 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 02:57:27.795 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 03:04:16.574 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 03:04:16.574 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 03:04:34.480 -0700	Information	730	serverhostname	SECURITY: Client "user (Warehouse [129.52.1.178]" single sign-on authentication failed on database "dbName.fmp12" using "user [fmapp]".
+2017-10-02 03:04:35.152 -0700	Information	638	serverhostname	Client "user" opening a connection from "Warehouse (129.52.1.178)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 03:04:35.168 -0700	Information	94	serverhostname	Client "user (Warehouse) [129.52.1.178]" opening database "dbName" as "user".
+2017-10-02 03:57:06.253 -0700	Information	98	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing database "dbName" as "user".
+2017-10-02 03:57:06.253 -0700	Information	22	serverhostname	Client "user (Warehouse) [129.52.1.178]" closing a connection.
+2017-10-02 04:42:45.889 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-10-02 04:42:46.561 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 04:42:46.561 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-10-02 04:52:11.335 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-10-02 04:52:11.335 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-10-02 04:52:22.553 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-10-02 04:52:23.241 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 04:52:23.241 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-10-02 04:57:36.831 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-10-02 04:57:36.831 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-10-02 04:59:05.268 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-10-02 04:59:28.237 -0700	Information	730	serverhostname	SECURITY: Client "user (Workstation) [129.52.0.17]" single sign-on authentication failed on database "dbName.fmp12" using "user_000 [fmapp]".
+2017-10-02 04:59:43.877 -0700	Information	638	serverhostname	Client "user" opening a connection from "Workstation (129.52.0.17)" using "Pro 16.0.2 [fmapp]".
+2017-10-02 04:59:43.877 -0700	Information	94	serverhostname	Client "user (Workstation) [129.52.0.17]" opening database "dbName" as "user".
+2017-10-02 05:39:14.486 -0700	Information	98	serverhostname	Client "user (Workstation) [129.52.0.17]" closing database "dbName" as "user".
+2017-10-02 05:39:14.486 -0700	Information	22	serverhostname	Client "user (Workstation) [129.52.0.17]" closing a connection.
+2017-10-02 05:44:28.826 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-10-02 05:44:28.826 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-10-02 05:46:44.262 -0700	Information	98	serverhostname	Client "user (Laptop) [10.0.0.40]" closing database "dbName" as "admin".
+2017-10-02 05:46:44.262 -0700	Information	22	serverhostname	Client "user (Laptop) [10.0.0.40]" closing a connection.
+2017-10-02 05:46:51.293 -0700	Information	638	serverhostname	Client "user" opening a connection from "Laptop (10.0.0.40)" using "ProAdvanced 16.0.2 [fmapp]".
+2017-10-02 05:46:51.293 -0700	Information	94	serverhostname	Client "user (Laptop) [10.0.0.40]" opening database "dbName" as "admin".
+2017-10-02 05:46:55.090 -0700	Information	98	serverhostname	Client "user (Laptop) [10.0.0.40]" closing database "dbName" as "admin".
+2017-10-02 05:46:55.090 -0700	Information	22	serverhostname	Client "user (Laptop) [10.0.0.40]" closing a connection.

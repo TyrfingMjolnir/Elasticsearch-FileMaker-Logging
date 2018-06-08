@@ -1,0 +1,51 @@
+{
+	"description": "Pipeline for parsing filemaker fmdapi logs",
+	"on_failure": [{
+		"set": {
+			"field": "error",
+			"value": "{{ _ingest.on_failure_message }}"
+		}
+	}],
+	"processors": [{
+			"grok": {
+				"field": "message",
+				"ignore_missing": true,
+				"pattern_definitions": {
+					"GREEDYMULTILINE": "(.|\n)*",
+					"TAB": "\t",
+					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
+				},
+				"patterns": [
+"%{TOMCAT_DATESTAMP:filemaker.fmdapi.logtime}%{TAB}%{WORD:filemaker.fmdapi.errorcode}%{TAB}%{WORD:filemaker.fmdapi.status}%{TAB}%{HOSTNAME:filemaker.fmdapi.hostname}%{TAB}%{WORD:filemaker.fmdapi.method}%{TAB}%{WORD:filemaker.fmdapi.verb}%{TAB}%{WORD:filemaker.fmdapi.path}%{TAB}",
+					
+"%{TOMCAT_DATESTAMP:filemaker.fmdapi.logtime}%{TAB}%{WORD:filemaker.fmdapi.logtype}%{TAB}%{WORD:filemaker.fmdapi.logid}%{TAB}%{HOSTNAME:filemaker.fmdapi.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.fmdapi.client}\\(%{DATA:filemaker.fmdapi.hostnamex}\\) \\[%{DATA:filemaker.fmdapi.ip}\\]\" %{DATA} \"%{DATA:filemaker.fmdapi.database}\" %{DATA}\"%{DATA:filemaker.fmdapi.user}\"?",
+
+"%{TOMCAT_DATESTAMP:filemaker.fmdapi.logtime}%{TAB}%{WORD:filemaker.fmdapi.logtype}%{TAB}%{WORD:filemaker.fmdapi.logid}%{TAB}%{HOSTNAME:filemaker.fmdapi.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.fmdapi.client}\\(%{DATA:filemaker.fmdapi.hostnamex}\\) \\[%{DATA:filemaker.fmdapi.ip}\\]\" %{DATA}."
+
+
+				]
+}
+		},
+		{
+			"remove": {
+				"field": "messagez"
+			}
+		},
+		{
+  			  "geoip": {
+ 			     "field": "filemaker.fmdapi.ip",
+   			   "target_field": "filemaker.fmdapi.geoip"
+    }		},
+		{
+			"date": {
+				"field": "filemaker.fmdapi.logtime",
+				"formats": [
+					"MMM  d HH:mm:ss",
+					"MMM dd HH:mm:ss"
+				],
+				"ignore_failure": true,
+				"target_field": "@timestamp"
+			}
+		}
+	]
+}
