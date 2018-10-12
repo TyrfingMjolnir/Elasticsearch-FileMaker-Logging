@@ -40,4 +40,4 @@ To reset the grok:
 curl -XDELETE http://localhost:9200/_ingest/pipeline/filebeat-5.6.2--filemaker-pipeline
 ```
 
-Not to self, the major difference between logstash and beats are: ```\\``` and ```\\\``` respectively.
+Note to self, the major difference between logstash and beats are: ```\\``` and ```\\\``` respectively.
