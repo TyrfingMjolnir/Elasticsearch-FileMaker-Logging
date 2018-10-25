@@ -16,13 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.wpe_debug.logtime}%{TAB}%{WORD:filemaker.wpe_debug.threadName}%{TAB}%{WORD:filemaker.wpe_debug.className}%{TAB}%{GREEDYDATA:filemaker.wpe_debug.message}%{TAB}",
-					
-"%{TOMCAT_DATESTAMP:filemaker.wpe_debug.logtime}%{TAB}%{WORD:filemaker.wpe_debug.logtype}%{TAB}%{WORD:filemaker.wpe_debug.logid}%{TAB}%{HOSTNAME:filemaker.wpe_debug.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.wpe_debug.client}\\(%{DATA:filemaker.wpe_debug.hostnamex}\\) \\[%{DATA:filemaker.wpe_debug.ip}\\]\" %{DATA} \"%{DATA:filemaker.wpe_debug.database}\" %{DATA}\"%{DATA:filemaker.wpe_debug.user}\"?",
-
-"%{TOMCAT_DATESTAMP:filemaker.wpe_debug.logtime}%{TAB}%{WORD:filemaker.wpe_debug.logtype}%{TAB}%{WORD:filemaker.wpe_debug.logid}%{TAB}%{HOSTNAME:filemaker.wpe_debug.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.wpe_debug.client}\\(%{DATA:filemaker.wpe_debug.hostnamex}\\) \\[%{DATA:filemaker.wpe_debug.ip}\\]\" %{DATA}."
-
-
+					"^%{TOMCAT_DATESTAMP:filemaker.wpe_debug.logtime}%{TAB}%{WORD:filemaker.wpe_debug.threadName}%{TAB}%{WORD:filemaker.wpe_debug.className}%{TAB}%{GREEDYDATA:filemaker.wpe_debug.message}$"
 				]
 }
 		},

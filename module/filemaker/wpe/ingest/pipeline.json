@@ -16,12 +16,8 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.wpe.logtime}%{TAB}%{WORD:filemaker.wpe.logtype}%{TAB}%{WORD:filemaker.wpe.logid}%{TAB}%{HOSTNAME:filemaker.wpe.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.wpe.client}\" %{WORD:filemaker.wpe.type} %{DATA}\"%{DATA:filemaker.wpe.hostnamex} \\(%{DATA:filemaker.wpe.ip}\\)\" %{DATA} \"%{DATA:filemaker.wpe.app}",
-
-"%{TOMCAT_DATESTAMP:filemaker.wpe.logtime}%{TAB}%{WORD:filemaker.wpe.logtype}%{TAB}%{WORD:filemaker.wpe.logid}%{TAB}%{HOSTNAME:filemaker.wpe.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.wpe.client}\\(%{DATA:filemaker.wpe.hostnamex}\\) \\[%{DATA:filemaker.wpe.ip}\\]\" %{DATA} \"%{DATA:filemaker.wpe.database}\" %{DATA}\"%{DATA:filemaker.wpe.user}\"?",
-
-"%{TOMCAT_DATESTAMP:filemaker.wpe.logtime}%{TAB}%{WORD:filemaker.wpe.logtype}%{TAB}%{WORD:filemaker.wpe.logid}%{TAB}%{HOSTNAME:filemaker.wpe.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.wpe.client}\\(%{DATA:filemaker.wpe.hostnamex}\\) \\[%{DATA:filemaker.wpe.ip}\\]\" %{DATA}."
-
+					"^%{TOMCAT_DATESTAMP:filemaker.wpe.logtime}%{TAB}%{IPORHOST:filemaker.wpe.hostname}%{TAB}%{WORD:filemaker.wpe.clientIPPort}%{TAB}%{WORD:filemaker.wpe.accountName}%{TAB}%{WORD:filemaker.wpe.moduleType}%{TAB}%{WORD:filemaker.wpe.severity}%{TAB}%{WORD:filemaker.wpe.filemakerErrorCode}%{TAB}%{WORD:filemaker.wpe.bytesReturned}%{TAB}%{GREEDYDATA:filemaker.wpe.url}$"
+					
 
 				]
 }

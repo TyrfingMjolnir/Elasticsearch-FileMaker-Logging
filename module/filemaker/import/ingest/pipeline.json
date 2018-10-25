@@ -16,10 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-					"^%{TOMCAT_DATESTAMP:filemaker.fmdapi.logtime}%{TAB}%{WORD:filemaker.fmdapi.number}%{TAB}%{WORD:filemaker.fmdapi.status}%{TAB}%{IPORHOST:filemaker.fmdapi.hostname}%{TAB}%{WORD:filemaker.fmdapi.isrest}%{TAB}%{WORD:filemaker.fmdapi.httpmethod}%{TAB}%{GREEDYDATA:filemaker.fmdapi.endpoint}$"
-					
-
-				]
+					"^%{TOMCAT_DATESTAMP:filemaker.import.logtime}%{TAB}%{WORD:filemaker.import.filename}%{TAB}%{WORD:filemaker.import.error}%{TAB}%{IPORHOST:filemaker.import.message}$"				]
 }
 		},
 		{

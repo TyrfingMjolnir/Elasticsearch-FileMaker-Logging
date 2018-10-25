@@ -16,11 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.stats.logtime}%{TAB}%{NUMBER:filemaker.stats.netwkbsecin}%{TAB}%{NUMBER:filemaker.stats.netwkbsecout}%{TAB}%{NUMBER:filemaker.stats.diskkbsecread}%{TAB}%{NUMBER:filemaker.stats.diskkbsecwrite}%{TAB}%{NUMBER:filemaker.stats.cachehits}%{TAB}%{NUMBER:filemaker.stats.cacheunsaved}%{TAB}%{NUMBER:filemaker.stats.proclients}%{TAB}%{NUMBER:filemaker.stats.opendbs}%{TAB}%{NUMBER:filemaker.stats.xdbcclients}%{TAB}%{NUMBER:filemaker.stats.webdirclients}%{TAB}%{NUMBER:filemaker.stats.cwpclients}%{TAB}%{NUMBER:filemaker.stats.remotecalls}%{TAB}%{NUMBER:filemaker.stats.remotecallsinprogress}%{TAB}%{NUMBER:filemaker.stats.elapsedtimeprcall}%{TAB}%{NUMBER:filemaker.stats.waittimeprcall}%{TAB}%{NUMBER:filemaker.stats.iotimeprcall}%{TAB}%{NUMBER:filemaker.stats.goclients}",
-					
-"%{TOMCAT_DATESTAMP:filemaker.stats.logtime}%{TAB}%{WORD:filemaker.stats.logtype}%{TAB}%{WORD:filemaker.stats.logid}%{TAB}%{HOSTNAME:filemaker.stats.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.stats.client}\\(%{DATA:filemaker.stats.hostnamex}\\) \\[%{DATA:filemaker.stats.ip}\\]\" %{DATA}."
-
-
+					"^%{TOMCAT_DATESTAMP:filemaker.stats.logtime}%{TAB}%{NUMBER:filemaker.stats.neworkKBsecIn}%{TAB}%{NUMBER:filemaker.stats.neworkKBsecOut}%{TAB}%{NUMBER:filemaker.stats.diskKBsecRead}%{TAB}%{NUMBER:filemaker.stats.diskKBsecWritten}%{TAB}%{NUMBER:filemaker.stats.cacheHitPercent}%{TAB}%{NUMBER:filemaker.stats.cacheUnsavedPercent}%{TAB}%{NUMBER:filemaker.stats.proClients}%{TAB}%{NUMBER:filemaker.stats.openDatabases}%{TAB}%{NUMBER:filemaker.stats.xDBCClients}%{TAB}%{NUMBER:filemaker.stats.webDirectClients}%{TAB}%{NUMBER:filemaker.stats.customWebClients}%{TAB}%{NUMBER:filemaker.stats.remoteCallsSec}%{TAB}%{NUMBER:filemaker.stats.remoteCallsInProgress}%{TAB}%{NUMBER:filemaker.stats.elapsedTimeCall}%{TAB}%{NUMBER:filemaker.stats.waitTimeCall}%{TAB}%{NUMBER:filemaker.stats.ioTimeCall}%{TAB}%{NUMBER:filemaker.stats.goClients}$"
 				]
 }
 		},

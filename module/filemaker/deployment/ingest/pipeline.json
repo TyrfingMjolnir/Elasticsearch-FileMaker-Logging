@@ -16,13 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\" %{WORD:filemaker.deployment.type} %{DATA}\"%{DATA:filemaker.deployment.hostnamex} \\(%{DATA:filemaker.deployment.ip}\\)\" %{DATA} \"%{DATA:filemaker.deployment.app}",
-					
-"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\\(%{DATA:filemaker.deployment.hostnamex}\\) \\[%{DATA:filemaker.deployment.ip}\\]\" %{DATA} \"%{DATA:filemaker.deployment.database}\" %{DATA}\"%{DATA:filemaker.deployment.user}\"?",
-
-"%{TOMCAT_DATESTAMP:filemaker.deployment.logtime}%{TAB}%{WORD:filemaker.deployment.logtype}%{TAB}%{WORD:filemaker.deployment.logid}%{TAB}%{HOSTNAME:filemaker.deployment.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.deployment.client}\\(%{DATA:filemaker.deployment.hostnamex}\\) \\[%{DATA:filemaker.deployment.ip}\\]\" %{DATA}."
-
-
+					"^%{GREEDYDATA:filemaker.deployment.statemnt}\\s%{WORD:filemaker.deployment.status}$"
 				]
 }
 		},

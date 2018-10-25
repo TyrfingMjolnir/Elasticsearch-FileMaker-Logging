@@ -16,12 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.access.logtime}%{TAB}%{WORD:filemaker.access.logtype}%{TAB}%{WORD:filemaker.access.logid}%{TAB}%{HOSTNAME:filemaker.access.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.access.client}\" %{WORD:filemaker.access.type} %{DATA}\"%{DATA:filemaker.access.hostnamex} \\(%{DATA:filemaker.access.ip}\\)\" %{DATA} \"%{DATA:filemaker.access.app}",
-					
-"%{TOMCAT_DATESTAMP:filemaker.access.logtime}%{TAB}%{WORD:filemaker.access.logtype}%{TAB}%{WORD:filemaker.access.logid}%{TAB}%{HOSTNAME:filemaker.access.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.access.client}\\(%{DATA:filemaker.access.hostnamex}\\) \\[%{DATA:filemaker.access.ip}\\]\" %{DATA} \"%{DATA:filemaker.access.database}\" %{DATA}\"%{DATA:filemaker.access.user}\"?",
-
-"%{TOMCAT_DATESTAMP:filemaker.access.logtime}%{TAB}%{WORD:filemaker.access.logtype}%{TAB}%{WORD:filemaker.access.logid}%{TAB}%{HOSTNAME:filemaker.access.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.access.client}\\(%{DATA:filemaker.access.hostnamex}\\) \\[%{DATA:filemaker.access.ip}\\]\" %{DATA}."
-
+					"^%{TOMCAT_DATESTAMP:filemaker.access.logtime}%{TAB}%{WORD:filemaker.access.loglevel}%{TAB}%{WORD:filemaker.access.number}%{TAB}%{IPORHOST:filemaker.access.hostname}%{TAB}%{GREEDYDATA:filemaker.access.statement}$"
 
 				]
 }

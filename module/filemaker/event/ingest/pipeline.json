@@ -16,13 +16,7 @@
 					"TOMCAT_DATESTAMP": "20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND}) %{ISO8601_TIMEZONE}"
 				},
 				"patterns": [
-"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{GREEDYDATA} %{DATA:filemaker.event.logentry}",
-					
-"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.event.client}\\(%{DATA:filemaker.event.hostnamex}\\) \\[%{DATA:filemaker.event.ip}\\]\" %{DATA} \"%{DATA:filemaker.event.database}\" %{DATA}\"%{DATA:filemaker.event.user}\"?",
-
-"%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.logtype}%{TAB}%{WORD:filemaker.event.logid}%{TAB}%{HOSTNAME:filemaker.event.hostname}%{TAB}%{HOSTNAME} \"%{DATA:filemaker.event.client}\\(%{DATA:filemaker.event.hostnamex}\\) \\[%{DATA:filemaker.event.ip}\\]\" %{DATA}."
-
-
+					"^%{TOMCAT_DATESTAMP:filemaker.event.logtime}%{TAB}%{WORD:filemaker.event.loglevel}%{TAB}%{WORD:filemaker.event.number}%{TAB}%{IPORHOST:filemaker.event.hostname}%{TAB}%{GREEDYDATA:filemaker.event.statement}$"
 				]
 }
 		},
