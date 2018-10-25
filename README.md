@@ -21,12 +21,9 @@ This is released in the aim of salus populi / the greater good, please use this 
 
 Inspired in part by: http://joelabrahamsson.com/elasticsearch-101/
 
+This is a project adopting the logs of FileMaker 17 Server to the filebeat log shipper for elasticsearch aka elk-stack
 
-This is a project adopting the logs of FileMaker 16 Server to the filebeat shipper for elasticsearch aka elk-stack
-
-The purpose of this module is to give you as the user the ability to browse your FileMaker 16 Server logs visually using kibana, or elasticsearch in other ways to analyze your logs.
-
-This piece of software was written by Arne Rolf Heier and Gjermund Gusland Thorsen; even though we claim the copyright this software is free for you to use and modify as long as the original authors are credited. This piece of software comes with no warranty what so ever. Use it at your own risk.
+The purpose of this module is to give you as the user the ability to browse your FileMaker 17 Server logs visually using kibana, or elasticsearch in other ways to analyze your logs.
 
 # Current status is: Access.log is ready for testing.
 
@@ -41,3 +38,7 @@ curl -XDELETE http://localhost:9200/_ingest/pipeline/filebeat-5.6.2--filemaker-p
 ```
 
 Note to self, the major difference between logstash and beats are: ```\\``` and ```\\\``` respectively.
+
+This piece of software was written by Arne Rolf Heier and Gjermund Gusland Thorsen; even though we claim the copyright this software is free for you to use and modify as long as the original authors are credited. This piece of software comes with no warranty what so ever. Use it at your own risk.
+
+Thanks to "Ask any questions you'd like" at Elastic{on} Tour Stockholm 2018; for helping me find a way to validate my groks live; using ```"POST _ingest/pipeline/_simulate"```
