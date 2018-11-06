@@ -42,3 +42,5 @@ Note to self, the major difference between logstash and beats are: ```\\``` and 
 This piece of software was written by Arne Rolf Heier and Gjermund Gusland Thorsen; even though we claim the copyright this software is free for you to use and modify as long as the original authors are credited. This piece of software comes with no warranty what so ever. Use it at your own risk.
 
 Thanks to "Ask any questions you'd like" at Elastic{on} Tour Stockholm 2018; for helping me find a way to validate my groks live; using ```"POST _ingest/pipeline/_simulate"```
+
+Which groks are available in your current elasticsearch installatiom: ```curl http://localhost:9200/_ingest/processor/grok```
