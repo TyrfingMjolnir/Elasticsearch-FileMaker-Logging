@@ -43,6 +43,7 @@ This piece of software was written by Arne Rolf Heier and Gjermund Gusland Thors
 
 Thanks to "Ask any questions you'd like" at Elastic{on} Tour Stockholm 2018; for helping me find a way to validate my groks live; using ```"POST _ingest/pipeline/_simulate"```
 
-Which groks are available in your current elasticsearch installatiom: ```
+Which groks are available in your current elasticsearch installatiom:
+```Sh
 curl -s http://localhost:9200/_ingest/processor/grok | json
 ```
